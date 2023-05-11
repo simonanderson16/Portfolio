@@ -1,37 +1,49 @@
-import {FaGithub, FaLinkedin, FaEnvelope, FaFile} from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaEnvelope, FaFile, FaFilePdf} from "react-icons/fa";
+import ButtonLinks from "./ButtonLinks";
 
 export default function NavBar() {
 
-    const openGithub = () => {
-        window.open("https://github.com/simonanderson16");
+    const scrollToAbout = () => {
+        const section = document.getElementById('about-section');
+        const sectionRect = section.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = sectionRect.top + scrollPosition - (8 * window.innerHeight / 100); // 8vmin equivalent calculation
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     };
 
-    const openLinkedin = () => {
-        window.open("https://www.linkedin.com/in/simon-anderson-84baa8274");
+    const scrollToSkills = () => {
+        const section = document.getElementById('skills-section');
+        const sectionRect = section.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = sectionRect.top + scrollPosition - (8 * window.innerHeight / 100); // 8vmin equivalent calculation
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     };
 
-    const openEmail = () => {
-        window.open("mailto:uhx8bu@virginia.edu");
+    const scrollToProjects = () => {
+        const section = document.getElementById('projects-section');
+        const sectionRect = section.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = sectionRect.top + scrollPosition - (8 * window.innerHeight / 100); // 8vmin equivalent calculation
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     };
 
+    const scrollToTimeline = () => {
+        const section = document.getElementById('timeline-section');
+        const sectionRect = section.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = sectionRect.top + scrollPosition - (8 * window.innerHeight / 100); // 8vmin equivalent calculation
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+    };
 
     return (
         <div className="nav-bar">
         <h2>Simon Anderson</h2>
-        <h3>About</h3>
-        <h3>Skills</h3>
-        <h3>Projects</h3>
-        <h3>Timeline</h3>
+        <button onClick={scrollToAbout}>About</button>
+        <button onClick={scrollToSkills}>Skills</button>
+        <button onClick={scrollToProjects}>Projects</button>
+        <button onClick={scrollToTimeline}>Timeline</button>
         <div className="navbar-buttons">
-            <button className="github-button" onClick={openGithub}><FaGithub size={30}/></button>
-            <button className="linkedin-button" onClick={openLinkedin}><FaLinkedin size={35}/></button>
-            <button className="email-button" onClick={openEmail}><FaEnvelope size={35}/></button>
-            <button className="resume-button">
-                <div className="resume-button-content">
-                    <FaFile size={30}/>
-                    <p>Resume</p>
-                </div>
-            </button>
+            <ButtonLinks/>
         </div>
         </div>
     );
