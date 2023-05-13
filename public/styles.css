@@ -161,7 +161,7 @@
     color: #eee;
   }
 
-  .skills-container, .timeline-container {
+  .skills-container /*.timeline-container*/ {
     margin-top: 0px;
     background: #ddd;
     height: 100vh;
@@ -218,7 +218,7 @@
     cursor: pointer;
   }
 
-  .timeline-items {
+  /*.timeline-items {
     width: 50%;
   }
 
@@ -227,6 +227,95 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }*/
+
+  .timeline-container {
+    height: fit-content;
+    background-color: #eee;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .timeline-container p {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .vertical-timeline {
+    position: relative;
+    padding-left: 4rem;
+    margin: 0 0 0 30px;
+    color: #222;
+    text-align: left;
+  }
+
+  .vertical-timeline::before {
+    content: "";
+    width: 4px;
+    height: 80%;
+    position: absolute;
+    background-color: #282c34;
+    left: 0;
+    top: 15px;
+  }
+
+  .vertical-timeline .timeline-box {
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .vertical-timeline .timeline-box .timeline-icon {
+    position: absolute;
+    left: -86px;
+    top: 4px;
+    width: 48px;
+    height: 48px;
+    background-color: #282c34;
+    border-radius: 0px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+.vertical-timeline .timeline-box .timeline-icon .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin: 10px;
+    color: #b68bfa;
+}
+
+.vertical-timeline .timeline-box .timeline-body {
+    color: #eee;
+    background-color: #282c34;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 1px 3px 9px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.vertical-timeline .timeline-box .timeline-body:hover {
+    box-shadow: 1px 3px 20px rgba(0,0,0,0.8);
+    background-color: #7b5aaf;
+}
+
+.vertical-timeline .timeline-box .timeline-body::before {
+    content: "";
+    background-color: inherit;
+    width: 100px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: -38px;
+    top: 25px
+}
+
+.vertical-timeline .timeline-box .timeline-body .timeline-date {
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.5;
+}
 
