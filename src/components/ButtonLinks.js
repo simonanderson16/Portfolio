@@ -12,18 +12,22 @@ const openEmail = () => {
     window.open("mailto:uhx8bu@virginia.edu");
 };
 
+const openResume = () => {
+    window.open("https://drive.google.com/file/d/1AfXM1wI0m1gaMV1GRwxx-8MKmzY-LosY/view?usp=sharing");
+};
+
 export default function ButtonLinks() {
     return (
-        <>
-            <button className="github-button" onClick={openGithub}><FaGithub size={30}/></button>
-            <button className="linkedin-button" onClick={openLinkedin}><FaLinkedin size={35}/></button>
-            <button className="email-button" onClick={openEmail}><FaEnvelope size={35}/></button>
-            <button className="resume-button">
+        <div className="button-links">
+            <button className="github-button" onClick={openGithub}><FaGithub size={25}/></button>
+            <button className="linkedin-button" onClick={openLinkedin}><FaLinkedin size={30}/></button>
+            <button className="email-button" onClick={openEmail}><FaEnvelope size={30}/></button>
+            <button className="resume-button" onClick={openResume}>
                 <div className="resume-button-content">
-                    <FaFilePdf size={30}/>
+                    <FaFilePdf size={25}/>
                     <p style={{marginLeft: '1vmin', marginRight: '1vmin', fontSize: '12px'}}>Resume</p>
                 </div>
             </button>
-        </>
-    );
+        </div>
+    )
 }

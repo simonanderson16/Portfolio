@@ -11,6 +11,7 @@ export default function Intro() {
                     <img src={require("../images/PortfolioHeadshot.jpg")} className="headshot"></img>
                 </div>
                 <h1>Simon Anderson</h1>
+                <h3>Software Engineering Intern @ CommonLit</h3>
                 <h3>Computer Science Student @ the University of Virginia - Class of 2025</h3>
             </div>
         </div>

@@ -20,12 +20,30 @@
 }
 
 .nav-bar button {
-    font-size: large;
     border: transparent;
     background-color: transparent;
     color: #eee;
     cursor: pointer;
     margin-right: 3vmin;
+}
+
+.navigation-button {
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.navigation-button:hover {
+    color:rgb(254, 202, 106);
+}
+
+.name-button {
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.4s ease;
+}
+
+.name-button:hover {
+    color: rgb(254, 202, 106);
 }
 
 .navbar-buttons {
@@ -40,8 +58,26 @@
     background-color: transparent;
     color: #eee;
     cursor: pointer;
-    margin-right: 3vmin;
+    margin-right: 2vmin;
+    transition: all 0.4s ease;
 }
+
+
+.button-links {
+    display: flex;
+}
+
+/*@media (max-width: 900px) {
+    .button-links {
+      visibility: collapse;
+    }
+  }*/
+
+/*.button-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vmin;
+}*/
 
 .github-button:hover {
     color: #bf7fe4;
@@ -130,6 +166,9 @@
     background: #ddd;
     height: 100vh;
     color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer {
@@ -144,4 +183,50 @@
     margin-bottom: 0px;
   }
 
-  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5vmin;
+    width: 60%;
+  }
+
+  .skill-item {
+    /*border: 1px solid #555;*/
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 25vh;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3vmin;
+    width: 60%;
+  }
+
+  .project-item {
+    /*border: 1px solid #222;*/
+    box-shadow: inset 0 0 10px rgba(247, 245, 245, 0.15);
+    height: 25vh;
+    cursor: pointer;
+  }
+
+  .timeline-items {
+    width: 50%;
+  }
+
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+

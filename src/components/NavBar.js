@@ -3,6 +3,10 @@ import ButtonLinks from "./ButtonLinks";
 
 export default function NavBar() {
 
+    const scrollToTop = () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+
     const scrollToAbout = () => {
         const section = document.getElementById('about-section');
         const sectionRect = section.getBoundingClientRect();
@@ -37,11 +41,13 @@ export default function NavBar() {
 
     return (
         <div className="nav-bar">
-        <h2>Simon Anderson</h2>
-        <button onClick={scrollToAbout}>About</button>
-        <button onClick={scrollToSkills}>Skills</button>
-        <button onClick={scrollToProjects}>Projects</button>
-        <button onClick={scrollToTimeline}>Timeline</button>
+        <button className="name-button" onClick={scrollToTop}>Simon Anderson</button>
+        <div className="nav-scroll-buttons">
+            <button className="navigation-button" onClick={scrollToAbout}>About</button>
+            <button className="navigation-button" onClick={scrollToSkills}>Skills</button>
+            <button className="navigation-button" onClick={scrollToProjects}>Projects</button>
+            <button className="navigation-button" onClick={scrollToTimeline}>Timeline</button>
+        </div>
         <div className="navbar-buttons">
             <ButtonLinks/>
         </div>
