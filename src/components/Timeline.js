@@ -35,7 +35,8 @@ export default function Timeline() {
             <div className="vertical-timeline">
                 <div className="timeline-box">
                     <div className="timeline-icon">
-                        <FaSchool className="icon"/>                 
+                        {/*<FaSchool className="icon"/>*/}
+                        <img src={require("../images/UVALogo.png")} className="icon"></img>                
                     </div>
                     <div className="timeline-body">
                         <h3 className="header">Started Pursuing BS in Computer Science @ UVA</h3>
@@ -46,7 +47,8 @@ export default function Timeline() {
 
                 <div className="timeline-box">
                     <div className="timeline-icon">
-                        <FaPenSquare className="icon"/>                    
+                        {/*<FaPenSquare className="icon"/>*/}   
+                        <img src={require("../images/ForgeLogo.png")} style={{width:'35px', height:'35px', marginLeft:'6px', marginTop:'6px'}} className="icon"></img>                                 
                     </div>
                     <div className="timeline-body">
                         <h3 className="header">Forge Launch Program</h3>
@@ -57,7 +59,8 @@ export default function Timeline() {
 
                 <div className="timeline-box">
                     <div className="timeline-icon">
-                        <FaCode className="icon"/>                  
+                        {/*<FaCode className="icon"/>*/}
+                        <img src={require("../images/CommonLitLogo.png")} style={{marginLeft:'9px', marginTop:'10px', width:'30px', height:'30px'}} className="icon"></img>                                  
                     </div>
                     <div className="timeline-body">
                         <h3 className="header">Sotware Engineering Intern @ CommonLit</h3>
@@ -68,7 +71,8 @@ export default function Timeline() {
 
                 <div className="timeline-box">
                     <div className="timeline-icon">
-                        <FaCodeBranch className="icon"/>   
+                        <FaCode className="icon" style={{color: 'gold'}}/>
+                        {/*<img src={require("../images/SDELogo.png")} style={{marginTop:'12px'}} className="icon"></img>*/}                                  
                     </div>
                     <div className="timeline-body">
                         <h3 className="header">Teaching Assistant for Software Development Essentials</h3>
