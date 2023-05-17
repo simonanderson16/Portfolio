@@ -342,13 +342,15 @@
     height: 85%;
     position: absolute;
     background-color: #282c34;
-    left: 0;
+    left: 16px;
     top: 15px;
   }
 
   .vertical-timeline .timeline-box {
     position: relative;
     margin-bottom: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .vertical-timeline .timeline-box .timeline-icon {
