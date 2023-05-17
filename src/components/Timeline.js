@@ -41,7 +41,6 @@ export default function Timeline() {
                     <div className="timeline-body">
                         <h3 className="header">Started Pursuing BS in Computer Science @ UVA</h3>
                         <p className="timeline-date">August 2021</p>
-                        <p>Description</p>
                     </div>
                 </div>
 
@@ -53,7 +52,7 @@ export default function Timeline() {
                     <div className="timeline-body">
                         <h3 className="header">Forge Launch Program</h3>
                         <p className="timeline-date">December 2022 - May 2023</p>
-                        <p>Description</p>
+                        <p>Through this program, I was trained for 50+ hours in the areas of GitHub, HTML & CSS, ReactJS, and more. In addition to these technical skills, I also received soft skills training, and this program helped me launch my career by connecting me with my first internship.</p>
                     </div>
                 </div>
 
@@ -77,7 +76,7 @@ export default function Timeline() {
                     <div className="timeline-body">
                         <h3 className="header">Teaching Assistant for Software Development Essentials</h3>
                         <p className="timeline-date">Ausust 2023 - Present</p>
-                        <p>Description</p>
+                        <p>In this role, my responsibilities include grading homeworks and exams, as well as aiding in student learning. This can come in many forms, such as holding online and in-person office hours, answering questions in online class forums, and helping to give lectures if needed.</p>
                     </div>
                 </div>
 
@@ -88,7 +87,6 @@ export default function Timeline() {
                     <div className="timeline-body">
                         <h3 className="header">Expected Graduation Date</h3>
                         <p className="timeline-date">May 2025</p>
-                        <p>Description</p>
                     </div>
                 </div>
 

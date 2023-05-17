@@ -48,6 +48,7 @@ export default function NavBar() {
             <button className="navigation-button" onClick={scrollToProjects}>Projects</button>
             <button className="navigation-button" onClick={scrollToTimeline}>Timeline</button>
         </div>
+        {/*<ButtonLinks/>*/}
         <div className="navbar-buttons">
             <ButtonLinks/>
         </div>
