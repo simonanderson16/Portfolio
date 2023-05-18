@@ -1,7 +1,11 @@
 export default function Projects() {
 
-    const openWeatherAppRepo = () => {
-        window.open("https://github.com/simonanderson16/WeatherNewsApp.git");
+    const openWeatherApp = () => {
+        window.open("https://simonanderson16.github.io/WeatherNewsApp/");
+    }
+
+    const openTicTacToe = () => {
+        window.open("https://simonanderson16.github.io/ReactTicTacToe/");
     }
 
     return (
@@ -12,7 +16,7 @@ export default function Projects() {
                 <h3>This site!</h3>
                 <p>Description of this site</p>
             </div>
-            <div className="project-item" onClick={openWeatherAppRepo}>
+            <div className="project-item" id="openable" onClick={openWeatherApp}>
                 <h3>Weather App</h3>
                 <p>Description of Weather App</p>
             </div>
@@ -20,7 +24,7 @@ export default function Projects() {
                 <h3>Dice Art</h3>
                 <p>Description of Dice Art</p>
             </div>
-            <div className="project-item">
+            <div className="project-item" id="openable" onClick={openTicTacToe}>
                 <h3>Tic-Tac-Toe</h3>
                 <p>Description of Tic-Tac-Toe</p>
             </div>

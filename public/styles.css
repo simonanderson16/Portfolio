@@ -77,6 +77,11 @@
     transition: all 0.4s ease;
 }
 
+#active {
+  transition: all 0.4s ease;
+  color: rgb(254, 202, 106);
+}
+
 
 .button-links {
     display: flex;
@@ -290,16 +295,24 @@
     /*border: 1px solid #606d86;*/
     /*box-shadow: 0 0 10px rgba(247, 245, 245, 0.15);*/
     height: 25vh;
-    cursor: pointer;
     background-color: #323640;
     transition: all 0.3s ease;
   }
 
   .project-item:hover {
-    background-color: #434753;
+    background-color: #3b3e47;
     /*color: #222;*/
     /*box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);*/
   }
+
+  #openable {
+    cursor: pointer;
+  }
+
+  #openable:hover {
+    background-color: #4e525f;
+  }
+
 
   /*.timeline-items {
     width: 50%;
@@ -339,7 +352,7 @@
   .vertical-timeline::before {
     content: "";
     width: 4px;
-    height: 85%;
+    height: 87.5%;
     position: absolute;
     background-color: #282c34;
     left: 16px;
