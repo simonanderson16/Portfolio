@@ -46,6 +46,8 @@
 .navigation-button {
     font-size: 18px;
     transition: all 0.4s ease;
+    text-align: center;
+    width: fit-content;
 }
 
 .navigation-button:hover {
@@ -78,8 +80,13 @@
 }
 
 #active {
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   color: rgb(254, 202, 106);
+  border-bottom: 1px solid #ddd;
+}
+
+#inactive {
+  border-bottom: 1px solid #222;
 }
 
 

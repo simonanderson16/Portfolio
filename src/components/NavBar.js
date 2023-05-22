@@ -90,7 +90,7 @@ export default function NavBar({sections, activeSection}) {
           <button className="name-button" onClick={scrollToTop}>Simon Anderson</button>
           <div className="nav-scroll-buttons">
           {sections.map((section, index) => (
-            <button className="navigation-button" id={activeSection === section ? 'active' : ''} key={index} onClick={() => scrollToSection(index)}>{sectionNames[index]}</button>
+            <button className="navigation-button" id={activeSection === section ? 'active' : 'inactive'} key={index} onClick={() => scrollToSection(index)}>{sectionNames[index]}</button>
           ))}
           </div>
           <div className="navbar-buttons">
